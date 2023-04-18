@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@dark.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+            <top>
+                <Label styleClass="label-header" text="Le jeu de la vie " BorderPane.alignment="CENTER" />
+            </top>
+    <right>
+        <VBox styleClass="encadre">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="Loup">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="groupeRadio" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton mnemonicParsing="false" selected="true" text="Mouton">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="animeaux" />
+                     </toggleGroup></RadioButton>
+               </children>
+            </VBox>
+         </children>
+        </VBox>
+    </right>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="nombre de tours" />
+                  <Label text="0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="161.0" text="nombre de vivants" />
+                  <Label text="0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </bottom>
+
+
+</BorderPane>
